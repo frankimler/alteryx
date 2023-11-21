@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\FIMLER\Desktop\Working Files\GitHubTools\ServerList.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ServerList.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Solution" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_WString" />
+            <Field name="Application_ITMS_ID" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="Int32" />
+            <Field name="Application_Name" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_WString" />
+            <Field name="Environment" size="100" source="(Multiple Sources)" type="V_String" />
+            <Field name="Logical_Name" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Platform_Type" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Network_Zone" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Server" size="100" source="(Multiple Sources)" type="V_String" />
+            <Field name="Hostname" size="255" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="IP_Address" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Alias" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_WString" />
+            <Field name="Operating_System" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Database" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Webserver" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Software" size="100" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_String" />
+            <Field name="Source_Tech07" size="255" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_WString" />
+            <Field name="Comment" size="500" source="File: aka:dzsql_pilot_config1|||SELECT *&#xA;FROM [AAET].[dbo].[APOG_ServerList]&#xA;WHERE Server Not In ('NULL','TBD')" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Solution</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-11-17 16:34:06</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Alteryx</Operand>
+              <StartDate>2023-11-17 16:34:06</StartDate>
+              <EndDate>2023-11-17 16:34:06</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Solution] = "Alteryx"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\FIMLER\AppData\Local\Temp\Engine_18120_09bd1c21144f46b281c357317e1e08f1_\Engine_23836_dd0a1cb741144ac286d2b63a37bcdf6e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Comment" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TestWorkflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8eb0358d-26cf-443a-8245-57f771624e29" />
+      <Telemetry>
+        <PreviousWorkflowId value="7a7c8e31-58fc-4964-a48c-e9cdf4be4556" />
+        <OriginWorkflowId value="7a7c8e31-58fc-4964-a48c-e9cdf4be4556" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
