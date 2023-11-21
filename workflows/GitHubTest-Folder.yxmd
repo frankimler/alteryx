@@ -12,12 +12,12 @@
           <Value name="FilePath">Field1</Value>
           <Value name="TargetPath">Field1</Value>
           <Value name="SelfCommit">True</Value>
-          <Value name="TargetDirectory">[Folder name]</Value>
+          <Value name="TargetDirectory">workflows</Value>
           <Value name="RepoOwner">frankimler</Value>
           <Value name="GitHubRepo">alteryx</Value>
           <Value name="Branch">main</Value>
           <Value name="Protected">False</Value>
-          <Value name="CommitMessage">Commit from Alteryx Designer Desktop</Value>
+          <Value name="CommitMessage">Commit from Alteryx Designer Desktop - folders</Value>
           <Value name="BaseAddress">https://api.github.com</Value>
           <Value name="AccessToken">49ABFE30B136DAE7B0D97D39E1B15130056B646E3A14DF287504C0D6EE0326D0FA95C39EC28957C660B43A6744A887493691525B5CF434D185E10A9840302F2640B2A206A4EB2284A917E67A15E2038070E99272391C7CA20BDBD88A5FA4924D69699B6749166C435B644B2A48E856EAB60C53CE77E13840A7BEA8B40C85E0728EE1D56B1FE5CDFBD2DB04BFEE52088D1C23B22FFCAC06528E144CAAD14238377D6347E8922E69497CD8E7F57F590486ED27C341FEB20E2C8FF4C5B05C36E4CA8E777467A9866D376BA1AF6D5E54C4364635E635E59D2DE765A379784A6520527C3AC84B35FDFC566BEEABC63A28256E4640905CB767706D817E02E47E197D50135FE08DFD309C805EB3D6015D22C1DBB171D299E2DA293C0CB3723C3050192AD77E59F6725BBBD6E57CD8E32005DE4449A24FB042044ECCAFC38B44D09DBC0799D9CAD80F570933E657E9661AAF5BC3DB664E5B5B2D2</Value>
         </Configuration>
@@ -26,6 +26,9 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="GitHub_Commit_1_0\GitHub Commit.yxmc" />
     </Node>
